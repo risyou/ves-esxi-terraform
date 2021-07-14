@@ -7,7 +7,7 @@ Most importantly, it contains .tf file to build [Volterra VM](https://www.volter
 ## 1.0 Prepare
 
 ```bash
-git clone https://github.com/risyou/ves-vm-terraform.git
+git clone https://github.com/risyou/ves-esxi-terraform
 cd ves-vm-terraform
 ```
 
@@ -36,5 +36,5 @@ terraform apply
 ```
 #### Note
 - If you wish to build from Dockerfile, you need to get [ovftool](https://www.vmware.com/support/developer/ovf/) from vmware and adjust Dockerfile.
-- https://github.com/risyou/ves-vm-terraform
+- https://github.com/risyou/ves-esxi-terraform
 - https://hub.docker.com/repository/docker/risyou/ves-esxi-terraform
