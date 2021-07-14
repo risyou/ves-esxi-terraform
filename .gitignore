@@ -1,0 +1,14 @@
+#  Local .terraform directories
+**/.terraform/*
+**/.terraform*
+
+# .tfstate files
+*.tfstate
+*.tfstate.*
+
+# .tfvars files
+*.tfvars
+
+# Crash log files
+crash.log
+/VMware-ovftool-4.4.1-16812187-lin.x86_64.bundle
