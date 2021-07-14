@@ -1,4 +1,4 @@
-# Terraform to create Volterra VM on ESXi
+# Docker image to create (Volterra) VM on ESXi using Terraform
 
 This [container](https://hub.docker.com/repository/docker/risyou/ves-esxi-terraform) has pre-build ovftool and terraform which can helps you build VM to ESXi without vCenter.
 
