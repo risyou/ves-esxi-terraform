@@ -25,7 +25,7 @@ variable "volterra" {
 
 variable "vm" {
   default   = {
-    ovf_file        =  "/tmp/centos-7.2009.10-202107041731.ova"
+    ovf_file        =  "/tmp/centos-7.2006.3-202105241147.ova"
     #vmname         = var.volterra["hostname"]
     virtual_network = "c3560-vlan201-192-168-201-dhcp"  #ESXi_Portgroup name
     datastore       = "datastore1"

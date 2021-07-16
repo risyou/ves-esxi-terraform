@@ -18,17 +18,20 @@ Input parameter to variable.tf, download [Volterra ova image](https://www.volter
 Get ova to your working directory
 ```bash
 #Optional
-wget https://downloads.volterra.io/releases/images/2021-07-04/centos-7.2009.10-202107041731.ova
+wget https://downloads.volterra.io/releases/images/2021-05-24/centos-7.2006.3-202105241147.ova
+#Need to add support latest image - issue#1
 ```
 
+
 ```bash
-docker run -it -v $(PWD):/tmp/ risyou/ves-esxi-terraform
+docker run -it -v ${PWD}:/tmp/ risyou/ves-esxi-terraform
 ```
 This will run container with /bin/sh, the default variable.tf assumes your ova is mounted to /tmp/
 
 ## 3.0 Build VM
 
 ```
+#Use variable mounted from your local storagels -
 cd /tmp
 terraform init
 terraform plan
