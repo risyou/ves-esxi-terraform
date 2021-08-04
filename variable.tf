@@ -10,11 +10,16 @@ variable "volterra" {
       "master-2",
       "worker-0"
     ]
-    #Leave blank to get from DHCP
-    ip_address = ""
-    gateway    = ""
-    dns1       = ""
-    dns2       = ""
+    #Leave IP/Gateway/DNS blank to get from DHCP
+    ip_address = [
+      "192.168.200.110/24",
+      "192.168.200.111/24",
+      "192.168.200.112/24",
+      "192.168.200.113/24"
+      ]
+    gateway    = "192.168.200.1"
+    dns1       = "8.8.8.8"
+    dns2       = "8.8.4.4"
     #main.tf take from the index[0], put what you want to use in index[0] for below parameter
     regurl     = ["ves.volterra.io","ves.volterra.io","staging.volterra.us"]
     hw         = ["vmware-voltstack-combo","vmware-voltstack-combo","vmware-voltmesh", "vmware-multi-nic-voltmesh", "vmware-multi-nic-voltstack-combo"]
@@ -22,6 +27,8 @@ variable "volterra" {
     longitude  = "139.7314718"
   }
 }
+
+
 
 variable "vm" {
   default   = {

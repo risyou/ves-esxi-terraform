@@ -44,11 +44,12 @@ resource "esxi_guest" "volterra" {
 
   ovf_properties {
     key   = "guestinfo.interface.0.ip.0.address"
-    value = var.volterra["ip_address"]
+    value = var.volterra["ip_address"][index(var.volterra["node_name"], each.value)]
+    #value = var.volterra["ip_address"]
   }
 
   ovf_properties {
-    key   = "guestinfo.interface.0.ip.0.gateway"
+    key   = "guestinfo.interface.0.route.0.gateway"
     value = var.volterra["gateway"]
   }
 
